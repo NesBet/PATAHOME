@@ -1,0 +1,4 @@
+// add babel
+{
+  "parser": "babel-eslint"
+ }
