@@ -12,8 +12,6 @@ const PropertyDetails = ({ propertyDetails: { price, rentFrequency, rooms, title
   const whatsappMessage = `Hello, I am interested in the property at ${title} listed for KSH ${millify(price)}${rentFrequency && `/${rentFrequency}`} \n ${currentPageUrl}`;
 
   const handleGoBack = () => {
-    // Implement your logic to go back here
-    // For example, you can use window.history.back() to go back to the previous page
     window.history.back();
   };
 
