@@ -94,8 +94,7 @@ export default PropertyDetails;
 
 export async function getServerSideProps({ params: { id } }) {
   const data = await fetchApi(`${baseUrl}/properties/detail?externalID=${id}`);
-  
-  // If no data was found, return a 404 status
+
   if (!data) {
     return {
       notFound: true,
