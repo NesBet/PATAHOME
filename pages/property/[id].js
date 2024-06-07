@@ -8,10 +8,10 @@ import millify from 'millify';
 import { baseUrl, fetchApi } from '../../utils/fetchApi';
 import ImageScrollbar from '../../components/ImageScrollbar';
 
-const PropertyDetails = ({ propertyDetails: { id, price, rentFrequency, rooms, title, baths, area, agency, isVerified, description, type, purpose, furnishingStatus, amenities, photos } }) => {
+const PropertyDetails = ({ propertyDetails: { price, rentFrequency, rooms, title, baths, area, agency, isVerified, description, type, purpose, furnishingStatus, amenities, photos } }) => {
   const router = useRouter();
-  const currentPageUrl = `${baseUrl}${router.asPath}`;
-  const propertyLink = `https://patahome-v2.vercel.app/property/${id}`;
+  // const currentPageUrl = `${baseUrl}${router.asPath}`;
+  const propertyLink = `https://patahome-v2.vercel.app/property/${propertyId}`;
   const whatsappMessage = `Hello, I am interested in the property at ${title} listed for KSH ${millify(price)}${rentFrequency && `/${rentFrequency}`} \n ${propertyLink}`;
 
   const handleGoBack = () => {
@@ -105,6 +105,7 @@ export async function getServerSideProps({ params: { id } }) {
   return {
     props: {
       propertyDetails: data,
+      propertyId: id,
     },
   };
 }
