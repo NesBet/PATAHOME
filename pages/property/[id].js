@@ -1,6 +1,5 @@
 import { Box, Flex, Spacer, Text, Button } from '@chakra-ui/react';
 import { Avatar } from '@chakra-ui/avatar';
-import { useRouter } from 'next/router';
 import { FaBed, FaBath, FaWhatsapp, FaArrowLeft } from 'react-icons/fa'; // Added FaArrowLeft icon
 import { BsGridFill } from 'react-icons/bs';
 import { GoVerified } from 'react-icons/go';
@@ -9,8 +8,6 @@ import { baseUrl, fetchApi } from '../../utils/fetchApi';
 import ImageScrollbar from '../../components/ImageScrollbar';
 
 const PropertyDetails = ({ propertyDetails: { price, rentFrequency, rooms, title, baths, area, agency, isVerified, description, type, purpose, furnishingStatus, amenities, photos }, propertyId }) => {
-  const router = useRouter();
-  //const currentPageUrl = `${baseUrl}${router.asPath}`;
   const propertyLink = `https://patahome-v2.vercel.app/property/${propertyId}`;
   const whatsappMessage = `Hello, I am interested in the property at ${title} listed for KSH ${millify(price)}${rentFrequency && `/${rentFrequency}`} \n ${propertyLink}`;
 
