@@ -10,7 +10,7 @@ import ImageScrollbar from '../../components/ImageScrollbar';
 
 const PropertyDetails = ({ propertyDetails: { price, rentFrequency, rooms, title, baths, area, agency, isVerified, description, type, purpose, furnishingStatus, amenities, photos } }) => {
   const router = useRouter();
-  const currentPageUrl = `${window.location.origin}${router.asPath}`;
+  const currentPageUrl = `${baseUrl}${router.asPath}`;
   const whatsappMessage = `Hello, I am interested in the property at ${title} listed for KSH ${millify(price)}${rentFrequency && `/${rentFrequency}`} \n ${currentPageUrl}`;
 
   const handleGoBack = () => {
@@ -92,7 +92,10 @@ const PropertyDetails = ({ propertyDetails: { price, rentFrequency, rooms, title
 
 export default PropertyDetails;
 
-export async function getServerSideProps({ params: { id } }) {
+export async function getServerSideProps({ params: { id }, req }) {
+  const protocol = req.headers['x-forwarded-proto'] || 'http';
+  const baseUrl = req ? `${protocol}://${req.headers.host}` : '';
+
   const data = await fetchApi(`${baseUrl}/properties/detail?externalID=${id}`);
   
   // If no data was found, return a 404 status
@@ -105,6 +108,7 @@ export async function getServerSideProps({ params: { id } }) {
   return {
     props: {
       propertyDetails: data,
+      baseUrl: baseUrl,
     },
   };
 }
