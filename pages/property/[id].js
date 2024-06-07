@@ -8,7 +8,7 @@ import millify from 'millify';
 import { baseUrl, fetchApi } from '../../utils/fetchApi';
 import ImageScrollbar from '../../components/ImageScrollbar';
 
-const PropertyDetails = ({ propertyDetails: { price, rentFrequency, rooms, title, baths, area, agency, isVerified, description, type, purpose, furnishingStatus, amenities, photos } }) => {
+const PropertyDetails = ({ propertyDetails: { price, rentFrequency, rooms, title, baths, area, agency, isVerified, description, type, purpose, furnishingStatus, amenities, photos }, propertyId }) => {
   const router = useRouter();
   const currentPageUrl = `${baseUrl}${router.asPath}`;
   const propertyLink = `https://patahome-v2.vercel.app/property/${propertyId}`;
