@@ -10,12 +10,8 @@ import ImageScrollbar from '../../components/ImageScrollbar';
 
 const PropertyDetails = ({ propertyDetails: { price, rentFrequency, rooms, title, baths, area, agency, isVerified, description, type, purpose, furnishingStatus, amenities, photos } }) => {
   const router = useRouter();
-  const setCurrentPageUrl = useState('');
   const currentPageUrl = `${baseUrl}${router.asPath}`;
-  useEffect(() => {
-    setCurrentPageUrl(window.location.href);
-  }, []);
-  const whatsappMessage = `Hello, I am interested in the property at ${title} listed for KSH ${millify(price)}${rentFrequency && `/${rentFrequency}`} \n ${setCurrentPageUrl}`;
+  const whatsappMessage = `Hello, I am interested in the property at ${title} listed for KSH ${millify(price)}${rentFrequency && `/${rentFrequency}`} \n ${currentPageUrl}`;
 
   const handleGoBack = () => {
     window.history.back();
