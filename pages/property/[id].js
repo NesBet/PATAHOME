@@ -7,14 +7,17 @@ import millify from 'millify';
 import { baseUrl, fetchApi } from '../../utils/fetchApi';
 import ImageScrollbar from '../../components/ImageScrollbar';
 
+// PropertyDetails component displays detailed information about a property
 const PropertyDetails = ({ propertyDetails: { price, rentFrequency, rooms, title, baths, area, agency, isVerified, description, type, purpose, furnishingStatus, amenities, photos }, propertyId }) => {
   const propertyLink = `https://patahome-v2.vercel.app/property/${propertyId}`;
-  const whatsappMessage = `Hello, I am interested in the property at ${title} listed for KSH ${millify(price)}${rentFrequency && `/${rentFrequency}`} \n ${propertyLink}`;
+  const whatsappMessage = `Hello, I am interested in the property at ${title} listed for KSH ${millify(price)}${rentFrequency && `/${rentFrequency}`} \n ${propertyLink}`; // Message for WhatsApp
 
+  // Function to handle the back button click event
   const handleGoBack = () => {
     window.history.back();
   };
 
+  // Display images if available
   return (
     <Box maxWidth='1000px' margin='auto' p='4'>
       {photos && <ImageScrollbar data={photos} />}
@@ -72,7 +75,7 @@ const PropertyDetails = ({ propertyDetails: { price, rentFrequency, rooms, title
             ))}
           </Flex>
       </Box>
-      <Button
+      <Button // Whatsapp button
         as="a"
         href={`https://wa.me/254794249775?text=${encodeURIComponent(whatsappMessage)}`}
         target="_blank"

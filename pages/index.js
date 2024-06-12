@@ -1,13 +1,16 @@
+// Importing necessary modules and components
 import Link from 'next/link';
 import Image from 'next/image';
 import { Flex, Box, Text, Button } from '@chakra-ui/react';
 import Property from '../components/Property';
 
+// Importing utility functions for fetching data
 import { baseUrl, fetchApi } from '../utils/fetchApi';
 
+// Banner component for displaying a banner with a purpose, titles, descriptions, button and link
 export const Banner = ({ purpose, title1, title2, desc1, desc2, buttonText, linkName, imageUrl }) => (
   <Box
-  mt={8}
+    mt={8}
     bgImage={`url(${imageUrl})`}
     bgPosition="center"
     bgRepeat="no-repeat"
@@ -32,9 +35,10 @@ export const Banner = ({ purpose, title1, title2, desc1, desc2, buttonText, link
   </Box>
 );
 
-
+// Home component for displaying the home page
 const Home = ({ propertiesForSale, propertiesForRent }) => (
   <Box>
+    {/* Banner for rental properties */}
     <Banner
       purpose='RENT A HOME'
       title1='Beautiful Homes for'
@@ -45,9 +49,11 @@ const Home = ({ propertiesForSale, propertiesForRent }) => (
       linkName='/search?purpose=for-rent'
       imageUrl='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.mos.cms.futurecdn.net%2F2XynkqtmYSY9wte5fp7Tyd.jpg&f=1&nofb=1&ipt=62c1baa7488202b3c3cb1d4f28820971fe83926c4386c3cb56ddfefc440c13fe&ipo=images'
     />
+    {/* List of rental properties */}
     <Flex flexWrap='wrap'>
       {propertiesForRent.map((property) => <Property property={property} key={property.id} />)}
     </Flex>
+    {/* Banner for properties for sale */}
     <Banner
       purpose='BUY A SPACE'
       title1=' Buy & Own Your '
@@ -58,12 +64,14 @@ const Home = ({ propertiesForSale, propertiesForRent }) => (
       linkName='/search?purpose=for-sale'
       imageUrl='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages4.alphacoders.com%2F829%2F829688.jpg&f=1&nofb=1&ipt=feec2cedc80b50162d11275d3eecf7be995fa334eb08140bca1f01a44b163983&ipo=images'
     />
+    {/* List of properties for sale */}
     <Flex flexWrap='wrap'>
       {propertiesForSale.map((property) => <Property property={property} key={property.id} />)}
     </Flex>
   </Box>
 );
 
+// Fetching properties for sale and for rent at build time
 export async function getStaticProps() {
   const propertyForSale = await fetchApi(`${baseUrl}/properties/list?locationExternalIDs=5002&purpose=for-sale&hitsPerPage=12`);
   const propertyForRent = await fetchApi(`${baseUrl}/properties/list?locationExternalIDs=5002&purpose=for-rent&hitsPerPage=12`);
@@ -76,4 +84,5 @@ export async function getStaticProps() {
   };
 }
 
+// Exporting Home component as default
 export default Home;
