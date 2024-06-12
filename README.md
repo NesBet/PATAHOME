@@ -1,6 +1,6 @@
-**PATAHOME: Own/Rent your dream home today.**
+**PATAHOME: ***Own/Rent your dream home today.*****
 
-***Introduction***
+***Introduction:***
 
 As an aspiring real estate enthusiast, I have always been fascinated by the process of finding the perfect property. Growing up, I had the privilege of witnessing my parents' journey in acquiring their dream home. The countless hours spent scouring through listings, attending open houses, and negotiating with agents left a lasting impression. I saw firsthand the challenges they faced in finding a property that truly aligned with their needs and preferences.
 
@@ -17,7 +17,7 @@ Landing Page:
 Home Page:
 ![HomePage Screenshot](./assets/images/HomePage.png)
 
-***Features***
+***Features:***
 
 Intuitive Search: PATAHOME offers a user-friendly search interface, allowing users to filter properties by location, price range, number of bedrooms, and other key criteria.
 
@@ -29,15 +29,15 @@ Saved Searches: Users can save their preferred search criteria and receive notif
 
 User Accounts: PATAHOME allows users to create accounts, save favorite properties, and manage their search history and saved searches.
 
-***Hosting***
+***Hosting:***
 
 The platform is hosted on Vercel, a leading cloud platform for static sites and serverless functions. You can access the live site at patahome.vercel.app. Additionally, you can read more about the project in the final project blog article.
 
-***Meet the Developer***
+***Meet the Developer:***
 The project was developed by Nehemiah Kibet, a full-stack web developer with a passion for creating innovative real estate technology solutions.
 [MyLinkedIn](https://www.linkedin.com/in/kibetse/)
 
-***Installation***
+***Installation:***
 
 To run PATAHOME locally in your machine, follow these steps:
 
@@ -59,7 +59,7 @@ Start the development server:
 
 Open your web browser and visit http://localhost:3000 to access the PATAHOME application.
 
-***Usage***
+***Usage:***
 
 Using PATAHOME is pretty much straightforward, let me show you:
 
