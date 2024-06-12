@@ -8,23 +8,29 @@
 
 PATAHOME is a real estate platform that enables users to easily search and discover properties for sale or rent. Developed using Next.js, a popular React framework, PATAHOME provides a seamless and responsive user experience across desktop and mobile devices.
 
+Landing Page:
 ![Landing Page Screenshot](./assets/images/LandingPage.png)
-
+Home Page:
 ![HomePage Screenshot](./assets/images/HomePage.png)
 
 ***Hosting***
 
 The platform is hosted on Vercel, a leading cloud platform for static sites and serverless functions. You can access the live site at patahome.vercel.app. Additionally, you can read more about the project in the final project blog article.
 
+
 The project was developed by Nehemiah Kibet, a full-stack web developer with a passion for creating innovative real estate technology solutions.
-[LinkedIn](https://www.linkedin.com/in/kibetse/)
+[MyLinkedIn](https://www.linkedin.com/in/kibetse/)
 
 ***Features***
 
 Intuitive Search: PATAHOME offers a user-friendly search interface, allowing users to filter properties by location, price range, number of bedrooms, and other key criteria.
+
 Responsive Design: The platform is optimized for seamless navigation and viewing on both desktop and mobile devices, ensuring a consistent and enjoyable experience.
+
 Property Details: Each property listing provides comprehensive information, including images, descriptions, amenities, and contact details for the listing agent or owner.
+
 Saved Searches: Users can save their preferred search criteria and receive notifications when new properties matching their preferences become available.
+
 User Accounts: PATAHOME allows users to create accounts, save favorite properties, and manage their search history and saved searches.
 
 ***Installation***
@@ -33,17 +39,18 @@ To run PATAHOME locally, follow these steps:
 
 Clone the repository:
 
-git clone https://github.com/NesBet/patahome.git
+##
+    git clone https://github.com/NesBet/patahome.git
 
-Navigate to the project directory: cd patahome
+Navigate to the project directory: 
+##
+    cd patahome
 
 Install the dependencies: 
-
 ##
     npm install
 
 Start the development server: 
-
 ##
     npm run dev
 
@@ -51,7 +58,7 @@ Open your web browser and visit http://localhost:3000 to access the PATAHOME app
 
 ***Usage***
 
-Using PATAHOME is pretty much straightforward:
+Using PATAHOME is pretty much straightforward, let me show you:
 
 Search for Properties: On the home page, users can enter their desired location, price range, and other filters to search for available properties.
 
@@ -69,7 +76,7 @@ Determined to improve this process, I embarked on a mission to develop a more in
 
 ***Contributing***
 
-We welcome contributions to the PATAHOME project! If you would like to get involved, please follow these steps:
+I welcome contributions to the PATAHOME project! If you would like to get involved, please follow these steps:
 
 Fork the repository.
 
