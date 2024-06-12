@@ -17,9 +17,6 @@ Landing Page:
 Home Page:
 ![HomePage Screenshot](./assets/images/HomePage.png)
 
-The project was developed by Nehemiah Kibet, a full-stack web developer with a passion for creating innovative real estate technology solutions.
-[MyLinkedIn](https://www.linkedin.com/in/kibetse/)
-
 ***Features***
 
 Intuitive Search: PATAHOME offers a user-friendly search interface, allowing users to filter properties by location, price range, number of bedrooms, and other key criteria.
@@ -36,9 +33,13 @@ User Accounts: PATAHOME allows users to create accounts, save favorite propertie
 
 The platform is hosted on Vercel, a leading cloud platform for static sites and serverless functions. You can access the live site at patahome.vercel.app. Additionally, you can read more about the project in the final project blog article.
 
+***Meet the Developer***
+The project was developed by Nehemiah Kibet, a full-stack web developer with a passion for creating innovative real estate technology solutions.
+[MyLinkedIn](https://www.linkedin.com/in/kibetse/)
+
 ***Installation***
 
-To run PATAHOME locally, follow these steps:
+To run PATAHOME locally in your machine, follow these steps:
 
 Clone the repository:
 ##
