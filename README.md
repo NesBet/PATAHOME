@@ -35,17 +35,17 @@ Clone the repository:
 
 git clone https://github.com/NesBet/patahome.git
 
-Navigate to the project directory:
+Navigate to the project directory: cd patahome
 
-cd patahome
+Install the dependencies: 
 
-Install the dependencies:
+##
+    npm install
 
-npm install
+Start the development server: 
 
-Start the development server:
-
-npm run dev
+##
+    npm run dev
 
 Open your web browser and visit http://localhost:3000 to access the PATAHOME application.
 
@@ -54,8 +54,11 @@ Open your web browser and visit http://localhost:3000 to access the PATAHOME app
 Using PATAHOME is pretty much straightforward:
 
 Search for Properties: On the home page, users can enter their desired location, price range, and other filters to search for available properties.
+
 Explore Listings: The search results page displays a list of properties that match the user's criteria. Each listing provides key details, such as property type, number of bedrooms and bathrooms, and the listing price.
+
 View Property Details: By clicking on a specific listing, users can access a detailed page with more information about the property, including photos, a description, and contact details for the listing agent or owner.
+
 Save Searches and Favorites: Registered users can save their preferred search criteria and mark properties as favorites for easy access later.
 
 ***Back Story***
