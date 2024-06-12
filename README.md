@@ -34,6 +34,7 @@ User Accounts: PATAHOME allows users to create accounts, save favorite propertie
 The platform is hosted on Vercel, a leading cloud platform for static sites and serverless functions. You can access the live site at patahome.vercel.app. Additionally, you can read more about the project in the final project blog article.
 
 ***Meet the Developer:***
+
 The project was developed by Nehemiah Kibet, a full-stack web developer with a passion for creating innovative real estate technology solutions.
 [MyLinkedIn](https://www.linkedin.com/in/kibetse/)
 
@@ -71,7 +72,7 @@ View Property Details: By clicking on a specific listing, users can access a det
 
 Save Searches and Favorites: Registered users can save their preferred search criteria and mark properties as favorites for easy access later.
 
-***Contributing***
+***Contributing:***
 
 I welcome contributions to the PATAHOME project! If you would like to get involved, please follow these steps:
 
