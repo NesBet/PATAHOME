@@ -2,6 +2,10 @@
 
 ***Introduction***
 
+As an aspiring real estate enthusiast, I have always been fascinated by the process of finding the perfect property. Growing up, I had the privilege of witnessing my parents' journey in acquiring their dream home. The countless hours spent scouring through listings, attending open houses, and negotiating with agents left a lasting impression. I saw firsthand the challenges they faced in finding a property that truly aligned with their needs and preferences.
+
+Determined to improve this process, I embarked on a mission to develop a more intuitive and user-friendly real estate platform. Drawing inspiration from my own experiences and the pain points shared by friends and family, I set out to create PATAHOME.
+
 [Try PATAHOME](https://bit.ly/patahome)
 
 [Project Blog](https://www.linkedin.com/posts/kibetse_patahome-redefining-real-estate-exploration-activity-7206624491026673664-wu0t?utm_source=share&utm_medium=member_desktop)
@@ -38,7 +42,6 @@ User Accounts: PATAHOME allows users to create accounts, save favorite propertie
 To run PATAHOME locally, follow these steps:
 
 Clone the repository:
-
 ##
     git clone https://github.com/NesBet/patahome.git
 
@@ -67,12 +70,6 @@ Explore Listings: The search results page displays a list of properties that mat
 View Property Details: By clicking on a specific listing, users can access a detailed page with more information about the property, including photos, a description, and contact details for the listing agent or owner.
 
 Save Searches and Favorites: Registered users can save their preferred search criteria and mark properties as favorites for easy access later.
-
-***Back Story***
-
-As an aspiring real estate enthusiast, I have always been fascinated by the process of finding the perfect property. Growing up, I had the privilege of witnessing my parents' journey in acquiring their dream home. The countless hours spent scouring through listings, attending open houses, and negotiating with agents left a lasting impression. I saw firsthand the challenges they faced in finding a property that truly aligned with their needs and preferences.
-
-Determined to improve this process, I embarked on a mission to develop a more intuitive and user-friendly real estate platform. Drawing inspiration from my own experiences and the pain points shared by friends and family, I set out to create PATAHOME.
 
 ***Contributing***
 
