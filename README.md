@@ -17,11 +17,6 @@ Landing Page:
 Home Page:
 ![HomePage Screenshot](./assets/images/HomePage.png)
 
-***Hosting***
-
-The platform is hosted on Vercel, a leading cloud platform for static sites and serverless functions. You can access the live site at patahome.vercel.app. Additionally, you can read more about the project in the final project blog article.
-
-
 The project was developed by Nehemiah Kibet, a full-stack web developer with a passion for creating innovative real estate technology solutions.
 [MyLinkedIn](https://www.linkedin.com/in/kibetse/)
 
@@ -36,6 +31,10 @@ Property Details: Each property listing provides comprehensive information, incl
 Saved Searches: Users can save their preferred search criteria and receive notifications when new properties matching their preferences become available.
 
 User Accounts: PATAHOME allows users to create accounts, save favorite properties, and manage their search history and saved searches.
+
+***Hosting***
+
+The platform is hosted on Vercel, a leading cloud platform for static sites and serverless functions. You can access the live site at patahome.vercel.app. Additionally, you can read more about the project in the final project blog article.
 
 ***Installation***
 
